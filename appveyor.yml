@@ -88,7 +88,7 @@ test_script:
       if ($env:BUILD_SYSTEM -eq "CMake") {
         ctest --output-on-failure --interactive-debug-mode 0 -C Debug
       } else {
-        python setup.py build_ext test
+        python setup.py build test
       }
 
 after_test:
